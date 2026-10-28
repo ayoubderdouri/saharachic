@@ -88,6 +88,7 @@ class ProductController extends Controller
             'sale_price' => ['nullable', 'numeric', 'min:0', 'lt:price'],
             'quantity' => ['required', 'integer', 'min:0'],
             'landing_page' => ['nullable', 'string', 'max:255'],
+            'whatsapp_url' => ['nullable', 'string', 'url:http,https', 'max:255'],
             'status' => ['required', Rule::in(['draft', 'active', 'archived'])],
             'is_featured' => ['boolean'],
             'meta' => ['nullable', 'json'],

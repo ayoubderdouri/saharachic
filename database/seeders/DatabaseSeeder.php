@@ -18,16 +18,16 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        $this->call([
-            SizeSeeder::class,
-            ColorSeeder::class,
-            TrenchEleganceSeeder::class,
-        ]);
-
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        //     'password' => Hash::make('password'),
+        // $this->call([
+        //     SizeSeeder::class,
+        //     ColorSeeder::class,
+        //     TrenchEleganceSeeder::class,
         // ]);
+
+        User::factory()->create([
+            'name' => 'Ayoub Derdouri',
+            'email' => 'derdouri.ayoub20@gmail.com',
+            'password' => Hash::make('Ayoub@2001'),
+        ]);
     }
 }

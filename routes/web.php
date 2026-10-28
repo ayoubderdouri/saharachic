@@ -27,6 +27,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::put('variants/{variant}', [Admin\ProductVariantController::class, 'update'])->name('variants.update');
     Route::patch('variants/{variant}', [Admin\ProductVariantController::class, 'quickUpdate'])->name('variants.quick-update');
     Route::delete('variants/{variant}', [Admin\ProductVariantController::class, 'destroy'])->name('variants.destroy');
+    Route::get('orders/{order}/delivery-note', [Admin\OrderController::class, 'deliveryNote'])->name('orders.delivery-note');
     Route::resource('orders', Admin\OrderController::class)->only(['index', 'show', 'update']);
 });
 

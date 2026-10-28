@@ -50,6 +50,10 @@
             <label class="block text-sm font-medium mb-1">Landing page</label>
             <input name="landing_page" value="{{ old('landing_page', $product->landing_page) }}" class="w-full rounded border-gray-300">
         </div>
+        <div>
+            <label for="whatsapp_url" class="block text-sm font-medium mb-1">Lien WhatsApp (facultatif)</label>
+            <input id="whatsapp_url" type="url" name="whatsapp_url" value="{{ old('whatsapp_url', $product->whatsapp_url) }}" placeholder="https://wa.me/212..." maxlength="255" class="w-full rounded border-gray-300">
+        </div>
         <div class="md:col-span-2">
             <label class="block text-sm font-medium mb-1">Description</label>
             <textarea name="description" rows="4" class="w-full rounded border-gray-300">{{ old('description', $product->description) }}</textarea>

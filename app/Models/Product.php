@@ -13,7 +13,7 @@ class Product extends Model
 
     protected $fillable = [
         'guid', 'category_id', 'name', 'slug', 'description', 'price', 'sale_price',
-        'quantity', 'meta', 'landing_page', 'status', 'is_featured',
+        'quantity', 'meta', 'landing_page', 'whatsapp_url', 'status', 'is_featured',
     ];
 
     protected function casts(): array

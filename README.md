@@ -21,6 +21,12 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Gestion des commandes
+
+Dans l'administration, la liste des commandes peut être filtrée par statut. Depuis le détail d'une commande, le bouton « Télécharger le bon de livraison A5 » produit un PDF imprimable contenant les coordonnées du client, les articles et le montant à encaisser.
+
+Le formulaire produit accepte un lien WhatsApp facultatif (par exemple `https://wa.me/212...`). Lorsqu'il est renseigné, une icône WhatsApp apparaît sur la page du produit. Après mise à jour, exécuter `php artisan migrate` pour ajouter le champ.
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
